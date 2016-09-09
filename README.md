@@ -2,7 +2,7 @@
 
 Web Experience Toolkit (WET) Moodle variant.
 
-*Status:* Initial development and specification design
+**Status:** Initial development and specification design
 
 ##What is the Web Experience Toolkit (WET-BOEW)?
 
@@ -22,14 +22,14 @@ This will hopefully enable organizations to focus their limited educational/trai
 
 ##Interested in this project?
 
-Let us know by [dropping us a note](issues/1). It's the best time to get involved when we are at the design stage.
+Let us know by [dropping us a note](../../issues/1). It's the best time to get involved when we are at the design stage.
 
 We would especially love to hear from:
 
 * People who are planning on or currently using Moodle within the Government of Canada or the private sector
 * Developers who would like to contribute to this project
 
-If you have any ideas, suggestions or code to share, please [create a new separate issue](issues) for each one.
+If you have any ideas, suggestions or code to share, please [create a new separate issue](../../issues) for each one.
 
 ##Why should I contribute?
 
@@ -49,7 +49,7 @@ These specifications and requirements may change as the initial development gets
 
 ##Documentation
 
-Documentation will be available in [the project's Wiki](wiki). This will include:
+Documentation will be available in [the project's Wiki](../../wiki). This will include:
 * Changelog
 * Installation
 * Configuration
@@ -60,14 +60,14 @@ Documentation will be available in [the project's Wiki](wiki). This will include
 
 ##Have Ideas? Need support? Reporting a bug?
 
-To propose ideas, report a bug or request support, please [create individual](issues). Keep in mind that support for this project is provided on a voluntary basis and is therefore limited by availability and willingness of volunteers to contribute their time and effort.
+To propose ideas, report a bug or request support, please [create individual](../../issues). Keep in mind that support for this project is provided on a voluntary basis and is therefore limited by availability and willingness of volunteers to contribute their time and effort.
 
 ##Acknowledgements
 
 This project is made possible through the combined efforts of many people including:
 
 * Lead developer, @michaelmilette with support of [TNG Consulting Inc.](http://www.tngconsulting.ca/)
-* Other [project contributors](graphs/contributors)
+* Other [project contributors](../../graphs/contributors)
 
 It is also made possible thanks to everyone who has ever contrubuted to related Government of Canada sponsored open source projects including the following projects:
 
@@ -88,7 +88,7 @@ We will be looking for volunteers to test RTL text support. Until then, this fea
 
 ##License
 
-Unless otherwise noted, the overall WET-BOEW-MOODLE project, wiki content, documentation and source code is Copyright © 2016 onwards by [TNG Consulting Inc.](http://www.tngconsulting.ca/) Inc. with parts which may be contributed/copyrighted by others. WET-BOEW-MOODLE is provided freely as open source software, can be redistributed and/or modified it under the terms of the [GNU General Public License version 3.0 or later](blob/master/license.txt).
+Unless otherwise noted, the overall WET-BOEW-MOODLE project, wiki content, documentation and source code is Copyright © 2016 onwards by [TNG Consulting Inc.](http://www.tngconsulting.ca/) Inc. with parts which may be contributed/copyrighted by others. WET-BOEW-MOODLE is provided freely as open source software, can be redistributed and/or modified it under the terms of the [GNU General Public License version 3.0 or later](../../blob/master/license.txt).
 
 It is distributed in the hope that it will be useful. However, **there is no warranty**, implied or otherwise, of merchantability or fitness for any purpose. See the GNU General Public License for details.
 
