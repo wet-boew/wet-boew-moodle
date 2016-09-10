@@ -1,0 +1,11 @@
+/* This file is part of the wet-boew-moodle theme */
+/* Copyright 2016 TNG Consulting Inc. */
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.4375;
+    padding-top:0;
+}
