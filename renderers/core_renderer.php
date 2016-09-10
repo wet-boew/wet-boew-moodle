@@ -20,7 +20,6 @@
  * @package      theme_wet-boew-moodle
  * @copyright    2016 TNG Consulting Inc. unless otherwise noted.
  * @author       Michael Milette <www.tngconsulting.ca>
- * @package      theme_wet-boew-moodle
  */
  
 defined('MOODLE_INTERNAL') || die();
