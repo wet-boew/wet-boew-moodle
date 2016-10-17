@@ -66,15 +66,15 @@ To propose ideas, report a bug or request support, please [create individual](ht
 
 This project is made possible through the combined efforts of many people including:
 
-* Lead developer, @michaelmilette with support of [TNG Consulting Inc.](http://www.tngconsulting.ca/)
+* Project Lead/Developer, @michaelmilette with support of [TNG Consulting Inc.](http://www.tngconsulting.ca/)
 * Other [project contributors](https://github.com/wet-boew/wet-boew-moodle/graphs/contributors)
 
-It is also made possible thanks to everyone who has ever contrubuted to related Government of Canada sponsored open source projects including the following projects:
+It is also made possible thanks to the efforts of hundreds of contributors to related open source projects including:
 
+* [WET-BOEW-PHP project](https://github.com/wet-boew/wet-boew-php/)
 * [WET-BOEW framework project](https://github.com/wet-boew/wet-boew/)
-* [WET-BOEW-PHP project](https://github.com/wet-boew/wet-boew-php/).
- 
-And last, but not least, this project would not even exist without the efforts of hundreds of contributors to [Moodle](https://www.moodle.org/).
+* [Moodle](https://www.moodle.org/)
+* [Moodle Adaptable Theme](https://moodle.org/plugins/themes_adaptable/)
 
 If you would like to contribute financially to this project in order to accellerate its development, please contact @michaelmilette.
 
