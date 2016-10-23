@@ -1,29 +1,28 @@
 <?php
-// This file is part of Moodle - http://moodle.org/
-//
-// Moodle is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// Moodle is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
 /**
- * Version details
+ * This file is part of the wet-boew-moodle project.
  *
+ * Copyright © 2016 onwards by TNG Consulting Inc. Inc.
+ *
+ * The WETBOEW theme for Moodle is provided freely as open source software, can be redistributed
+ * and/or modified it under the terms of the GNU General Public License version 3.0 or later.
+ *
+ * This software is distributed in the hope that it will be useful. However, there is no warranty,
+ * implied or otherwise, of merchantability or fitness for any purpose.
+ *
+ * If for any reason a copy of the GNU General Public License was not included with this project,
+ * you can view it online by going to: https://www.gnu.org/licenses/gpl-3.0.en.html</p>
+**/
+/**
  * @package    theme_wetboew
- * @copyright  2016 TNG Consulting Inc. (www.tngconsulting.ca)
- * @copyright  2015-2016 Jeremy Hopkins (Coventry University)
- * @copyright  2015-2016 Fernando Acedo (3-bits.com)
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- *
- */
+ * @copyright  2016 TNG Consulting Inc. unless otherwise noted.
+ * @author     Michael Milette <www.tngconsulting.ca>
+ * @license    WET-BOEW-Moodle: http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later.
+ * @license    Moodle: http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later.
+ * @license    WET-BOEW: https://github.com/wet-boew/wet-boew/blob/master/License-eng.txt MIT License.
+ * @license    Government of Canada graphics: Government of Canada http://www.tbs-sct.gc.ca/fip-pcim/index-eng.asp .
+ * @license    3rd party software included with WET-BOEW: Held by the respective copyright holders as noted in those files.
+**/
 
 defined('MOODLE_INTERNAL') || die;
 
@@ -31,36 +30,10 @@ defined('MOODLE_INTERNAL') || die;
 $CFG->nofixday  = true;
 
 $settings = null;
-//require_once(__DIR__.'/libs/admin_confightmleditor.php');
 require_once(__DIR__.'/locallib.php');
 
 if (is_siteadmin()) {
     // WET-BOEW theme settings page.
     global $PAGE;
     $ADMIN->add('themes', new admin_category('theme_wetboew', 'WETBOEW'));
-
-    // include(dirname(__FILE__) . '/settings/array_definitions.php');
-    // include(dirname(__FILE__) . '/settings/colors.php');
-    // include(dirname(__FILE__) . '/settings/fonts.php');
-    // include(dirname(__FILE__) . '/settings/buttons.php');
-    // include(dirname(__FILE__) . '/settings/header.php');
-    // include(dirname(__FILE__) . '/settings/header_menus.php');
-    // include(dirname(__FILE__) . '/settings/header_user.php');
-    // include(dirname(__FILE__) . '/settings/header_social.php');
-    // include(dirname(__FILE__) . '/settings/header_navbar.php');
-    // include(dirname(__FILE__) . '/settings/header_navbar_menu.php');
-    // include(dirname(__FILE__) . '/settings/block_settings.php');
-    // include(dirname(__FILE__) . '/settings/block_regions.php');
-    // include(dirname(__FILE__) . '/settings/course.php');
-    // include(dirname(__FILE__) . '/settings/marketing_blocks.php');
-    // include(dirname(__FILE__) . '/settings/frontpage_courses.php');
-    // include(dirname(__FILE__) . '/settings/frontpage_ticker.php');
-    // include(dirname(__FILE__) . '/settings/frontpage_slider.php');
-    // include(dirname(__FILE__) . '/settings/alert_box.php');
-    // include(dirname(__FILE__) . '/settings/layout.php');
-    // include(dirname(__FILE__) . '/settings/footer.php');
-    // include(dirname(__FILE__) . '/settings/mobile_settings.php');
-    // include(dirname(__FILE__) . '/settings/social_wall.php');
-    // include(dirname(__FILE__) . '/settings/analytics.php');
-    // include(dirname(__FILE__) . '/settings/custom_css.php');
 }

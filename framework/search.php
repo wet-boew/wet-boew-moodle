@@ -2,7 +2,7 @@
 /**
  * This file is part of the wet-boew-moodle project.
  *
- * Copyright © 2016 onwards by TNG Consulting Inc. Inc.
+ * Copyright Â© 2016 onwards by TNG Consulting Inc. Inc.
  *
  * The WETBOEW theme for Moodle is provided freely as open source software, can be redistributed
  * and/or modified it under the terms of the GNU General Public License version 3.0 or later.
@@ -25,18 +25,11 @@
 **/
 
 defined('MOODLE_INTERNAL') || die();
-
-class theme_wetboew_core_renderer extends theme_bootstrapbase_core_renderer {
-    /**
-     * Returns empty language menu.
-     *
-     * @return string.
-     */
-    public function lang_menu() {
-        return '';
-    }
-}
-
-class theme_wetboew_core_course_renderer extends core_course_renderer {
-    //
-}
+?>
+<form action="<?php echo $CFG->wwwroot; ?>/course/search.php" method="post" role="search" class="form-inline">
+    <div class="form-group">
+        <label for="wb-srch-q"><?php echo $_SITE['wb_search_label_'.$_PAGE['lang1']]; ?></label>
+        <input id="wb-srch-q" class="form-control" name="search" type="search" value="" size="27" maxlength="150">
+    </div>
+    <button type="submit" id="wb-srch-sub" class="btn btn-default" name="wb-srch-sub">Search</button>
+</form>

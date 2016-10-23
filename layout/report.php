@@ -26,13 +26,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2016090101;           // The current module version (Date: YYYYMMDDXX).
-$plugin->requires  = 2016052300;           // Requires Moodle version 3.1+. See http://docs.moodle.org/dev/version.php.
-$plugin->component = 'theme_wetboew';     // Full name of the plugin (used for diagnostics).
-$plugin->maturity  = MATURITY_ALPHA;
-$plugin->release   = '4.0.23';             // Based on WET-BOEW of the same version number.
-
-$plugin->dependencies = array(
-//    'filter_multilangsecond'  => ANY_VERSION,
-    'theme_bootstrapbase'     => 2014111000
-);
+$columns = 1;
+$extracss = '';
+require 'columns.php';

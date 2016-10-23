@@ -2,35 +2,41 @@
 /**
  * This file is part of the wet-boew-moodle project.
  *
- * Copyright © 2016 onwards by TNG Consulting Inc. Inc. 
+ * Copyright © 2016 onwards by TNG Consulting Inc. Inc.
  *
- * WET-BOEW-MOODLE is provided freely as open source software, can be redistributed and/or 
- * modified it under the terms of the GNU General Public License version 3.0 or later.
+ * The WETBOEW theme for Moodle is provided freely as open source software, can be redistributed
+ * and/or modified it under the terms of the GNU General Public License version 3.0 or later.
  *
  * This software is distributed in the hope that it will be useful. However, there is no warranty,
  * implied or otherwise, of merchantability or fitness for any purpose.
  *
  * If for any reason a copy of the GNU General Public License was not included with this project,
  * you can view it online by going to: https://www.gnu.org/licenses/gpl-3.0.en.html</p>
-*/
+**/
+/**
+ * @package    theme_wetboew
+ * @copyright  2016 TNG Consulting Inc. unless otherwise noted.
+ * @author     Michael Milette <www.tngconsulting.ca>
+ * @license    WET-BOEW-Moodle: http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later.
+ * @license    Moodle: http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later.
+ * @license    WET-BOEW: https://github.com/wet-boew/wet-boew/blob/master/License-eng.txt MIT License.
+ * @license    Government of Canada graphics: Government of Canada http://www.tbs-sct.gc.ca/fip-pcim/index-eng.asp .
+ * @license    3rd party software included with WET-BOEW: Held by the respective copyright holders as noted in those files.
+**/
 
 /**
  * Moodle Theme configuration file for the wet-boew-moodle theme.
- *
- * @package      theme_wetboew
- * @copyright    2016 TNG Consulting Inc. unless otherwise noted.
- * @author       Michael Milette <www.tngconsulting.ca>
- */
+**/
  
 defined('MOODLE_INTERNAL') || die();
 
 global $PAGE;
-
-if (isset($PAGE) && $PAGE->pagetype == 'site-index') {
-    $regions = array('side-pre', 'side-post', 'middle-top', 'middle-bottom');
-} else {
-    $regions = array('side-post');
-}
+$regions = array('side-pre', 'side-post', 'middle-top', 'middle-bottom');
+// if (isset($PAGE) && $PAGE->pagetype == 'site-index') {
+    // $regions = array('side-pre', 'side-post', 'middle-top', 'middle-bottom');
+// } else {
+    // $regions = array('side-post');
+// }
 
 $THEME->enable_dock = false;
 $THEME->name = 'wetboew';
@@ -57,46 +63,45 @@ $THEME->layouts = array(
     // Main course page.
     'course' => array(
         'file' => 'columns2.php',
-        'regions' => array('side-post'),
-        'defaultregion' => 'side-post',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
         'options' => array('langmenu' => true),
     ),
     'coursecategory' => array(
         'file' => 'columns2.php',
-        'regions' => array('side-post'),
-        'defaultregion' => 'side-post',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
     ),
     // Part of course, typical for modules - default page layout if $cm specified in require_login().
     'incourse' => array(
         'file' => 'columns2.php',
-        'regions' => array('side-post'),
-        'defaultregion' => 'side-post',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
     ),
     // The site home page.
     'frontpage' => array(
-        'file' => 'columns1.php',
-        'regions' => $regions,
-        'defaultregion' => 'side-post',
+        'file' => 'frontpage.php',
+        'regions' => array(),
         'options' => array('nonavbar' => true),
     ),
     // Server administration scripts.
     'admin' => array(
         'file' => 'columns2.php',
-        'regions' => array('side-post'),
-        'defaultregion' => 'side-post',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
     ),
     // My dashboard page.
     'mydashboard' => array(
-        'file' => 'columns1.php',
-        'regions' => array('side-post'),
-        'defaultregion' => 'side-post',
+        'file' => 'columns2.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
         'options' => array('langmenu' => true),
     ),
     // My public page.
     'mypublic' => array(
         'file' => 'columns2.php',
-        'regions' => array('side-post'),
-        'defaultregion' => 'side-post',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
         'options' => array('nonavbar' => true),
     ),
     // Login page.
@@ -105,9 +110,10 @@ $THEME->layouts = array(
         'regions' => array(),
         'options' => array('langmenu' => true, 'nonavbar' => true),
     ),
+
     // Pages that appear in pop-up windows - no navigation, no blocks, no header.
     'popup' => array(
-        'file' => 'columns1.php',
+        'file' => 'popup.php',
         'regions' => array(),
         'options' => array('nofooter' => true, 'nonavbar' => true),
     ),

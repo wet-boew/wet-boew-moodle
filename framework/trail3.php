@@ -26,17 +26,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-class theme_wetboew_core_renderer extends theme_bootstrapbase_core_renderer {
-    /**
-     * Returns empty language menu.
-     *
-     * @return string.
-     */
-    public function lang_menu() {
-        return '';
-    }
-}
-
-class theme_wetboew_core_course_renderer extends core_course_renderer {
-    //
-}
+include 'wet-boew-php/demos-php/menu/trail-3-' . $_PAGE['lang1'] . '.php';
+?>
