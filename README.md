@@ -1,6 +1,7 @@
 #WET-BOEW-Moodle
 
 Web Experience Toolkit (WET), Moodle variant.
+![Screenshot of 5 WET-BOEW-Moodle 4.0 sub-themes](https://github.com/wet-boew/wet-boew-moodle/blob/master/pix/screenshot.png?raw=true)
 
 **Status:**
 
