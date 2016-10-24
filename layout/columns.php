@@ -78,7 +78,7 @@ $_PAGE['isserv']   = (!empty($_PAGE['isserv'])   ? $_PAGE['isserv']   : '0');
 
 $_PAGE['lang1'] = current_language();
 
-$_SITE['wb_theme'] = 'theme-gcwu-fegc';
+// $_SITE['wb_theme'] = 'theme-gcwu-fegc';
 
 require_once $CFG->dirroot . '/theme/' . $CFG->theme . '/wetconfig.php';
 
@@ -131,10 +131,10 @@ if ($_SITE['wb_theme'] == 'theme-gcweb') {
 $_PAGE['nobcrumb'] = !empty($PAGE->layout_options['nonavbar']) && $PAGE->has_navbar();
 // Login/Logout/Register/Settings buttons.
 if (empty($PAGE->layout_options['nologininfo'])) {
-    $_PAGE['signin'] = !isloggedin();
-    $_PAGE['register'] = 1;
-    $_PAGE['signout'] = isloggedin();
-    $_PAGE['settings'] = 1;
+    $_PAGE['signin'] = !isloggedin() || isguestuser();           // Logged out or guest user.
+    $_PAGE['register'] = $_PAGE['signin'] && $CFG->registerauth; // Is Email based self-registration enabled?
+    $_PAGE['signout'] = isloggedin() && !isguestuser();          // Logged in but not guest user.
+    $_PAGE['settings'] = $_PAGE['signout'];                      // Logged in but not guest user.
 } else {
     $_PAGE['signin'] = $_PAGE['signout'] = 0;
 }
@@ -237,8 +237,8 @@ echo '    </div>';
 echo '<div id="course-footer">' . $OUTPUT->course_footer() . '</div>';
 echo '<div class="text-center">';
 echo '<p class="helplink">' . $OUTPUT->page_doc_link() . '</p>';
-echo $OUTPUT->login_info();
-echo $OUTPUT->home_link();
+// echo $OUTPUT->login_info();
+// echo $OUTPUT->home_link();
 echo $OUTPUT->standard_footer_html();
 echo '</div>';
 

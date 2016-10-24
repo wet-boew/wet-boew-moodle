@@ -28,54 +28,58 @@ defined('MOODLE_INTERNAL') || die();
 
 $columns = 1;
 $extracontent = '
-    <div class="container-fluid">
+<div class="container-fluid">
+    <div class="hero-unit">
+        <div class="row-fluid">
+            <div class="span4">
+                <img src="theme/' . $CFG->theme . '/pix/screenshot.png" style="width:100%;padding-top:20px;"></a>
+            </div>
+            <div class="span8">
+                <h2>WET-BOEW-Moodle Working Example</h2>
+                <p>The theme is currently under early development so you might notice a few things that are not quite finish yet. Check back in upcoming months or contribute financially or through development efforts to this project in order to accellerate the process.</p>
+                <p>This page is a configurable front page example for your Moodle LMS. It is displayed when users are signed out of the website.</p>
+                <p>As you explore this demo site, you will quickly notice that we aren\'t just hiding Moodle behind a few themed pages. The whole site is suitable for public facing training.</p>
+                <p><a class="btn btn-primary btn-large" href="#frontpage-course-list">Try a course! &raquo;</a></p>
+            </div>
+        </div>
+    </div>
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h2>Putting the WET-BOEW framework on Moodle!</h2>
-        <p>This is a sample template for the front page of your Moodle LMS when users are logged out. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-      </div>
+    <div class="row-fluid">
+        <div class="span4">
+            <h2>GC Web Usability</h2>
+            <p>The Government of Canada Web Usability subtheme implements the requirements of the Standard on Web Usability and is recommended for use on all Government of Canada websites (except for Canada.ca).</p>
+            <p><a class="btn" href="./?wettheme=theme-gcwu-fegc">Try it! &raquo;</a></p>
+        </div><!--/span-->
+        <div class="span4">
+            <h2>GC Intranet</h2>
+            <p>The Government of Canada Intranet subtheme adapts the Government of Canada Web Usability theme for intranet sites.</p>
+            <p><a class="btn" href="./?wettheme=theme-gc-intranet">Try it! &raquo;</a></p>
+        </div><!--/span-->
+        <div class="span4">
+            <h2>WET-BOEW</h2>
+            <p>The Web Experience Toolkit (WET) subtheme provides an example implementation of the Base Theme.</p>
+            <p><a class="btn" href="./?wettheme=theme-wet-boew">Try it! &raquo;</a></p>
+        </div><!--/span-->
+    </div><!--/row-->
 
-      <!-- Example row of columns -->
-          <div class="row-fluid">
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-
-          <div class="row-fluid">
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-
-      <hr>
-
-    </div> <!-- /container -->
+    <div class="row-fluid">
+        <div class="span4">
+            <h2>Canada.ca</h2>
+            <p>This subtheme implements the layout and design requirements for Canada.ca.</p>
+            <p><a class="btn" href="./?wettheme=theme-gcweb">Try it! &raquo;</a></p>
+        </div><!--/span-->
+        <div class="span4">
+            <h2>OGPL</h2>
+            <p>The Open Government Platform (OGPL) subtheme was developed to support the Open Government Platform (OGPL).</p>
+            <p><a class="btn" href="./?wettheme=theme-ogpl">Try it! &raquo;</a></p>
+        </div><!--/span-->
+        <div class="span4">
+            <h2>Base</h2>
+            <p>A subtheme template to aid in the creation of new custom themes.</p>
+            <p><strong>Coming in the future</strong></p>
+        </div><!--/span-->
+    </div><!--/row-->
+    <hr>
+</div> <!-- /container -->
 ';
 require 'columns.php';

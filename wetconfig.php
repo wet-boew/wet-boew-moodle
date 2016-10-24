@@ -50,7 +50,6 @@ if (isset($_GET['wettheme'])) {
 
 // All WET-BOEW files will go under this directory.
 $_SITE['wb_www_root'] = parse_url($CFG->wwwroot, PHP_URL_PATH).'/theme/wetboew/framework'; // Make blank if in the root of your site (no trailing slash!).
-$_SITE['wb_www_root'] = '/themes31/theme/wetboew/framework'; // Make blank if in the root of your site (no trailing slash!).
 // Location of the WET-BOEW-PHP files.
 $_SITE['wb_php_root'] = $_SITE['wb_www_root'] . '/wet-boew-php';
 // Location of the WET-BOEW-THEMES core files.

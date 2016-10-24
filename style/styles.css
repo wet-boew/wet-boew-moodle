@@ -188,4 +188,11 @@ div.moodle-actionmenu ul li  img {
  height:20px;
  font-size:0.8em;
   padding:0 10px;
-} 
+}
+
+/* Automatically size course summary images. */
+.coursebox .content .courseimage img {
+    max-width: 100%;
+    max-height: none;
+    height:auto;
+}

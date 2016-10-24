@@ -71,18 +71,19 @@ $THEME->layouts = array(
         'file' => 'columns2.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
+        'options' => array('langmenu' => true),
     ),
     // Part of course, typical for modules - default page layout if $cm specified in require_login().
     'incourse' => array(
         'file' => 'columns2.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
+        'options' => array('langmenu' => true),
     ),
     // The site home page.
     'frontpage' => array(
         'file' => 'frontpage.php',
         'regions' => array(),
-        'options' => array('nonavbar' => true),
     ),
     // Server administration scripts.
     'admin' => array(
@@ -102,7 +103,6 @@ $THEME->layouts = array(
         'file' => 'columns2.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
-        'options' => array('nonavbar' => true),
     ),
     // Login page.
     'login' => array(

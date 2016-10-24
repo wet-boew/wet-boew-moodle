@@ -36,7 +36,3 @@ class theme_wetboew_core_renderer extends theme_bootstrapbase_core_renderer {
         return '';
     }
 }
-
-class theme_wetboew_core_course_renderer extends core_course_renderer {
-    //
-}

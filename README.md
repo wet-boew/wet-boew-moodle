@@ -8,7 +8,10 @@ Web Experience Toolkit (WET), Moodle variant.
 
 * Initial development and specification design.
 * General look and feel now working (see new screenshot).
-* TODO list still includes:
+* **New Demo site: [wet-boew-moodle.tngconsulting.ca](http://wet-boew-moodle.tngconsulting.ca/)**
+
+TODO list still includes:
+
 ** Support for multiple languages.
 ** Improve accessibility.
 ** Add Theme settings.
@@ -24,7 +27,7 @@ Note: I am currently focusing on finding my next employer/client so the progress
 
 ##What is the Web Experience Toolkit (WET-BOEW)?
 
-See https://github.com/wet-boew/wet-boew
+See [github.com/wet-boew/wet-boew](https://github.com/wet-boew/wet-boew)
 
 ##What is Moodle LMS? 
 
