@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * This file is part of the wet-boew-moodle project.
  *
@@ -36,7 +36,7 @@ $extracontent = '
             </div>
             <div class="span8">
                 <h2>WET-BOEW-Moodle Working Example</h2>
-                <p>The theme is currently under early development so you might notice a few things that are not quite finish yet. Check back in upcoming months or contribute financially or through development efforts to this project in order to accellerate the process.</p>
+                <p>The theme is currently under early development so you might notice a few things that are not quite finish yet. Check back in upcoming months or contribute financially or through development efforts to this project in order to accelerate the process.</p>
                 <p>This page is a configurable front page example for your Moodle LMS. It is displayed when users are signed out of the website.</p>
                 <p>As you explore this demo site, you will quickly notice that we aren\'t just hiding Moodle behind a few themed pages. The whole site is suitable for public facing training.</p>
                 <p><a class="btn btn-primary btn-large" href="#frontpage-course-list">Try a course! &raquo;</a></p>
