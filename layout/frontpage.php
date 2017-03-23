@@ -1,8 +1,8 @@
-﻿<?php
+<?php
 /**
  * This file is part of the wet-boew-moodle project.
  *
- * Copyright © 2016 onwards by TNG Consulting Inc. Inc.
+ * Copyright © 2016 onwards by TNG Consulting Inc.
  *
  * The WETBOEW theme for Moodle is provided freely as open source software, can be redistributed
  * and/or modified it under the terms of the GNU General Public License version 3.0 or later.
@@ -15,7 +15,7 @@
 **/
 /**
  * @package    theme_wetboew
- * @copyright  2016 TNG Consulting Inc. unless otherwise noted.
+ * @copyright  2016-2017 TNG Consulting Inc. unless otherwise noted.
  * @author     Michael Milette <www.tngconsulting.ca>
  * @license    WET-BOEW-Moodle: http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later.
  * @license    Moodle: http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later.
@@ -36,7 +36,7 @@ $extracontent = '
             </div>
             <div class="span8">
                 <h2>WET-BOEW-Moodle Working Example</h2>
-                <p>The theme is currently under early development so you might notice a few things that are not quite finish yet. Check back in upcoming months or contribute financially or through development efforts to this project in order to accelerate the process.</p>
+                <p>The theme is currently under early development so you might notice a few things that are not quite finish yet. Check back in upcoming months or contribute financially or through development efforts to this project in order to accelerate the process. For more information and source code, visit the <a href="https://github.com/wet-boew/wet-boew-moodle">WET-BOEW-Moodle project</a> page.</p>
                 <p>This page is a configurable front page example for your Moodle LMS. It is displayed when users are signed out of the website.</p>
                 <p>As you explore this demo site, you will quickly notice that we aren\'t just hiding Moodle behind a few themed pages. The whole site is suitable for public facing training.</p>
                 <p><a class="btn btn-primary btn-large" href="#frontpage-course-list">Try a course! &raquo;</a></p>
