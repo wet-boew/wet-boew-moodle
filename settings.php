@@ -2,7 +2,7 @@
 /**
  * This file is part of the wet-boew-moodle project.
  *
- * Copyright © 2016 onwards by TNG Consulting Inc. Inc.
+ * Copyright © 2016 onwards by TNG Consulting Inc.
  *
  * The WETBOEW theme for Moodle is provided freely as open source software, can be redistributed
  * and/or modified it under the terms of the GNU General Public License version 3.0 or later.
@@ -36,4 +36,7 @@ if (is_siteadmin()) {
     // WET-BOEW theme settings page.
     global $PAGE;
     $ADMIN->add('themes', new admin_category('theme_wetboew', 'WETBOEW'));
+    
+    // include 'settings/branding.php';
+    // include 'settings/css.php';
 }

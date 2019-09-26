@@ -1,7 +1,7 @@
 /**
  * This file is part of the wet-boew-moodle project.
  *
- * Copyright © 2016 onwards by TNG Consulting Inc. Inc.
+ * Copyright © 2016 onwards by TNG Consulting Inc.
  *
  * The WETBOEW theme for Moodle is provided freely as open source software, can be redistributed
  * and/or modified it under the terms of the GNU General Public License version 3.0 or later.
@@ -185,9 +185,9 @@ div.moodle-actionmenu ul li  img {
 
 /* Make customize buttons a little smaller. */
 #wb_customize input[type=submit] {
- height:20px;
- font-size:0.8em;
-  padding:0 10px;
+ height: 20px;
+ font-size: 0.8em;
+  padding: 0 10px;
 }
 
 /* Automatically size course summary images. */
@@ -196,3 +196,42 @@ div.moodle-actionmenu ul li  img {
     max-height: none;
     height:auto;
 }
+
+/*
+    UserMenu.
+*/
+
+/* Ensure usermenu is never forced to the right. */
+.jsenabled .usermenu {
+    float: none;
+    display:inline-block;
+}
+/* Fix colour of dividers in user menu. */
+.jsenabled .usermenu .moodle-actionmenu>.menu .filler {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Fix alignment (was done for Customize This Page button). */
+.singlebutton input[type="submit"], input[type="cancel"] {
+    margin-bottom: 0 !important;
+    font-size: 16px !important;
+}
+
+/* Fix size of small icons. */
+img.iconsmall, .section .summary .iconsmall, .section .activity .iconsmall {
+    height: auto;
+    width: auto;
+}
+
+/* Fix alignment of activity content. */
+li.activity {
+  text-align:left;
+}
+li.activity ul {
+  padding: 0 10px 10px;
+}
+
+/* -------------------------*/
+/* Custom CSS Settings      */
+/* -------------------------*/
+/* TODO: [[setting:customcss]] */

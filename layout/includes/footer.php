@@ -17,14 +17,28 @@
  * @package    theme_wetboew
  * @copyright  2016 TNG Consulting Inc. unless otherwise noted.
  * @author     Michael Milette <www.tngconsulting.ca>
- * @license    WET-BOEW-Moodle: http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later.
- * @license    Moodle: http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later.
- * @license    WET-BOEW: https://github.com/wet-boew/wet-boew/blob/master/License-eng.txt MIT License.
- * @license    Government of Canada graphics: Government of Canada http://www.tbs-sct.gc.ca/fip-pcim/index-eng.asp .
- * @license    3rd party software included with WET-BOEW: Held by the respective copyright holders as noted in those files.
 **/
 
 defined('MOODLE_INTERNAL') || die();
 
-$columns = 1;
-require 'columns.php';
+// Display page footer.
+
+// MOODLE
+
+echo '<div id="course-footer">' . $OUTPUT->course_footer() . '</div>';
+// TODO: echo $OUTPUT->get_footer_blocks();
+echo '<div class="text-center">';
+// TODO: if ($PAGE->theme->settings->moodledocs) {
+    echo '<p class="helplink">' . $OUTPUT->page_doc_link() . '</p>';
+// TODO: }
+// TODO: echo $OUTPUT->login_info();
+// TODO: echo $OUTPUT->home_link();
+echo $OUTPUT->standard_footer_html();
+echo '</div>';
+
+// WETBOEW
+
+require $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . '/inc/foot-nav.php';
+echo $OUTPUT->standard_end_of_body_html();
+// TODO: echo $OUTPUT->get_all_tracking_methods();
+require $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . '/inc/foot-end.php';

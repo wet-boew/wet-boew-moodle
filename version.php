@@ -2,7 +2,7 @@
 /**
  * This file is part of the wet-boew-moodle project.
  *
- * Copyright © 2016 onwards by TNG Consulting Inc. Inc.
+ * Copyright © 2016 onwards by TNG Consulting Inc.
  *
  * The WETBOEW theme for Moodle is provided freely as open source software, can be redistributed
  * and/or modified it under the terms of the GNU General Public License version 3.0 or later.
@@ -15,7 +15,7 @@
 **/
 /**
  * @package    theme_wetboew
- * @copyright  2016 TNG Consulting Inc. unless otherwise noted.
+ * @copyright  2016-2019 TNG Consulting Inc. unless otherwise noted.
  * @author     Michael Milette <www.tngconsulting.ca>
  * @license    WET-BOEW-Moodle: http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later.
  * @license    Moodle: http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later.
@@ -26,9 +26,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2016090101;           // The current module version (Date: YYYYMMDDXX).
+$plugin->version   = 2019092602;           // The current module version (Date: YYYYMMDDXX).
 $plugin->requires  = 2016052300;           // Requires Moodle version 3.1+. See http://docs.moodle.org/dev/version.php.
-$plugin->component = 'theme_wetboew';     // Full name of the plugin (used for diagnostics).
+$plugin->component = 'theme_wetboew';      // Full name of the plugin (used for diagnostics).
 $plugin->maturity  = MATURITY_ALPHA;
 $plugin->release   = '4.0.23';             // Based on WET-BOEW of the same version number.
 

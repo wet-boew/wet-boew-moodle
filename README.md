@@ -2,23 +2,41 @@
 
 Web Experience Toolkit (WET), Moodle variant.
 
-![Screenshot of 5 WET-BOEW-Moodle 4.0 sub-themes](https://github.com/wet-boew/wet-boew-moodle/blob/master/pix/screenshot.png?raw=true)
+![Screenshot of WET-BOEW-Moodle 4.0 sub-themes](https://github.com/wet-boew/wet-boew-moodle/blob/master/pix/screenshot.png?raw=true)
 
-**Status:**
+## Important notice
+
+**This is the final release of the WET-BOEW-MOODLE THEME v4.0.23. No additional development will be done for the following reasons:**
+
+* The Government of Canada no longer supports these themes.
+* Moodle no longer supports the base theme upon which this was built.
+* The WET-BOEW-PHP project has not been updated to reflect the 2019 Canada.ca GCWeb and GCIntranet themes.
+* The source code was getting too hard to maintain.
+
+The good news is that development has started on a new native Moodle WET-BOEW-Moodle GCWeb and GCIntranet themes and good progress has been made as seen on the
+WET-BOEW-Moodle Workimg Examples site which now showcases the new 2019 4.0.30 edition of the theme: [wet-boew-moodle.tngconsulting.ca](http://wet-boew-moodle.tngconsulting.ca/)
+
+**Please contact the primary project maintainer, [Michael Milette, TNG Consulting Inc.](https://www.tngconsulting.ca/contact), if you want to support this project financially or contribute your time and effort to the development of these new themes.**
+
+**Status for v4.0.23 theme:**
+
 * Initial development and specification design.
 * General look and feel now working (see new screenshot).
-* **New Demo site: [wet-boew-moodle.tngconsulting.ca](http://wet-boew-moodle.tngconsulting.ca/)**
+* WET-BOEW framework files are included in this release (2019-09-26).
+* Compatible with Moodle 3.1. Has not been tested with other vesions of Moodle and is definitely not compatible as as of Moodle 3.7.
 
 TODO list still includes:
+
 * Resolving conflicts with base theme.
 * Add support for multiple languages.
 * Improve accessibility.
 * Add theme settings.
 * Adding new UI/UX features.
+* Ensure that Moodle menus are included on all pages.
 * Fix the GC Intranet and Canada.ca themes.
 * Add the base theme.
+* Add the Canada.ca 2019 redesign themes including GCWeb and GGIntranet.
 * Cleanup code.
-* Add WET-BOEW framework files to repository.
 * Create splash page and 404 server page.
 * Quality Assurance and WCAG 2.0 level AA testing.
 * Write documentation.
@@ -61,7 +79,7 @@ If you are part of Government, education or other large corporations, you can sa
 
 ## System Requirements
 
-WET-BOEW-Moodle will initially be released for Moodle 3.1.x LTS (Long Term Support) but be supported on Apache based web servers only. Details of [Web server, database and web browser requirements](https://docs.moodle.org/dev/Moodle_3.1_release_notes#Server_requirements) can be found on Moodle.org. Support for other versions of Moodle may be added at a later date depending on the level of interest.
+WET-BOEW-Moodle is compatible with Moodle 3.1.x LTS (Long Term Support) on Apache based web servers only. Details of [Web server, database and web browser requirements](https://docs.moodle.org/dev/Moodle_3.1_release_notes#Server_requirements) can be found on Moodle.org. Support for other versions of Moodle may be added at a later date depending on the level of interest.
 
 Note: The WET-BOEW-Moodle theme will also include web based mobile support on iOS and Android devices.
 

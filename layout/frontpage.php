@@ -32,7 +32,7 @@ $extracontent = '
     <div class="hero-unit">
         <div class="row-fluid">
             <div class="span4">
-                <img src="theme/' . $CFG->theme . '/pix/screenshot.png" style="width:100%;padding-top:20px;"></a>
+                <img src="' . $CFG->wwwroot . '/theme/wetboew/pix/screenshot.png" style="width:100%;padding-top:20px;"></a>
             </div>
             <div class="span8">
                 <h2>WET-BOEW-Moodle Working Example</h2>
@@ -69,17 +69,24 @@ $extracontent = '
             <p><a class="btn" href="./?wettheme=theme-gcweb">Try it! &raquo;</a></p>
         </div><!--/span-->
         <div class="span4">
+            <h2>Canada.ca Redesign (2019)</h2>
+            <p>This subtheme implements the layout and design requirements for Canada.ca Redesign (2019) Under development.</p>
+            <p><a class="btn" href="./?wettheme=theme-gcweb2">Try it! &raquo;</a></p>
+        </div><!--/span-->
+        <div class="span4">
             <h2>OGPL</h2>
             <p>The Open Government Platform (OGPL) subtheme was developed to support the Open Government Platform (OGPL).</p>
             <p><a class="btn" href="./?wettheme=theme-ogpl">Try it! &raquo;</a></p>
-        </div><!--/span-->
-        <div class="span4">
-            <h2>Base</h2>
-            <p>A subtheme template to aid in the creation of new custom themes.</p>
-            <p><strong>Coming in the future</strong></p>
         </div><!--/span-->
     </div><!--/row-->
     <hr>
 </div> <!-- /container -->
 ';
+/*
+        <div class="span4">
+            <h2>Base</h2>
+            <p>A subtheme template to aid in the creation of new custom themes.</p>
+            <p><strong>Coming in the future</strong></p>
+        </div><!--/span-->
+*/
 require 'columns.php';

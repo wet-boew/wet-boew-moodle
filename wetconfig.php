@@ -2,7 +2,7 @@
 /**
  * This file is part of the wet-boew-moodle project.
  *
- * Copyright © 2016 onwards by TNG Consulting Inc. Inc.
+ * Copyright © 2016 onwards by TNG Consulting Inc.
  *
  * The WETBOEW theme for Moodle is provided freely as open source software, can be redistributed
  * and/or modified it under the terms of the GNU General Public License version 3.0 or later.
@@ -33,16 +33,21 @@ defined('MOODLE_INTERNAL') || die();
 // Choose a theme. Uncomment the one you want.
 // --------------------------------------------------------------------------
 
-// $_SITE['wb_theme'] = "theme-base";        // WET Base theme
-// $_SITE['wb_theme'] = 'theme-gc-intranet'; // Government of Canada Web Usability Intranet theme.
-// $_SITE['wb_theme'] = 'theme-gcweb';       // Canada.ca theme.
-// $_SITE['wb_theme'] = 'theme-gcwu-fegc';   // Government of Canada Web Usability theme.
-// $_SITE['wb_theme'] = 'theme-ogpl';        // OGPL theme.
-// $_SITE['wb_theme'] = 'theme-wet-boew';    // WET-BOEW theme.
-if (!isset($_SITE['wb_theme'])) $_SITE['wb_theme'] = 'theme-base'; // Default is Base WET theme
+// $themes[] = "theme-base";        // WET Base theme
+$themes[] = 'theme-gc-intranet'; // Government of Canada Web Usability Intranet theme.
+$themes[] = 'theme-gcweb';       // Canada.ca theme.
+$themes[] = 'theme-gcweb2';      // Canada.ca Redesign theme.
+$themes[] = 'theme-gcwu-fegc';   // Government of Canada Web Usability theme.
+$themes[] = 'theme-ogpl';        // OGPL theme.
+$themes[] = 'theme-wet-boew';    // WET-BOEW theme.
+
+if (!isset($_SITE['wb_theme'])) $_SITE['wb_theme'] = 'theme-wet-boew'; // Default is Base WET theme
 
 if (isset($_GET['wettheme'])) {
-    $_SITE['wb_theme'] = preg_replace('/[^-a-z0-9]/', '', $_GET['wettheme']);
+    $nexttheme = preg_replace('/[^-a-z0-9]/', '', $_GET['wettheme']);
+    if (in_array($nexttheme, $themes)) {
+        $_SITE['wb_theme'] = preg_replace('/[^-a-z0-9]/', '', $nexttheme);
+    }
     setcookie('wettheme', $_SITE['wb_theme'], 0, '/');
 } else if (isset($_COOKIE['wettheme'])) {
     $_SITE['wb_theme'] = $_COOKIE['wettheme'];

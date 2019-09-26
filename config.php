@@ -2,7 +2,7 @@
 /**
  * This file is part of the wet-boew-moodle project.
  *
- * Copyright © 2016 onwards by TNG Consulting Inc. Inc.
+ * Copyright © 2016 onwards by TNG Consulting Inc.
  *
  * The WETBOEW theme for Moodle is provided freely as open source software, can be redistributed
  * and/or modified it under the terms of the GNU General Public License version 3.0 or later.
@@ -30,7 +30,21 @@
  
 defined('MOODLE_INTERNAL') || die();
 
-global $PAGE;
+global $PAGE, $parenttheme;
+
+$THEME->name = 'wetboew';
+
+$parenttheme = 'bootstrapbase';
+//$parenttheme = 'bootstrap';
+$THEME->parents = array($parenttheme);
+
+if ('ltr' === get_string('thisdirection', 'langconfig')) {
+    $THEME->sheets = array('moodle');
+} else {
+    $THEME->sheets = array('moodle-rtl');
+}
+//$THEME->parents_exclude_sheets = array('bootstrap' => array('moodle'));
+
 $regions = array('side-pre', 'side-post', 'middle-top', 'middle-bottom');
 // if (isset($PAGE) && $PAGE->pagetype == 'site-index') {
     // $regions = array('side-pre', 'side-post', 'middle-top', 'middle-bottom');
@@ -38,16 +52,16 @@ $regions = array('side-pre', 'side-post', 'middle-top', 'middle-bottom');
     // $regions = array('side-post');
 // }
 
-$THEME->enable_dock = false;
-$THEME->name = 'wetboew';
 $THEME->doctype = 'html5';
-$THEME->parents = array('bootstrapbase');
 $THEME->sheets = array('styles', $THEME->name);
 $THEME->supportscssoptimisation = false;
 $THEME->yuicssmodules = array();
-
+$THEME->enable_dock = false;
 $THEME->editor_sheets = array('editor');
+
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
+$THEME->csspostprocess = 'theme_wetboew_process_css';
+
 $THEME->layouts = array(
     // Most backwards compatible layout without the blocks - this is the layout used by default.
     'base' => array(
@@ -59,6 +73,7 @@ $THEME->layouts = array(
         'file' => 'columns2.php',
         'regions' => array('side-post'),
         'defaultregion' => 'side-post',
+        'options' => array('langmenu' => true),
     ),
     // Main course page.
     'course' => array(
@@ -82,8 +97,10 @@ $THEME->layouts = array(
     ),
     // The site home page.
     'frontpage' => array(
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
         'file' => 'frontpage.php',
-        'regions' => array(),
+        'options' => array('langmenu' => true),
     ),
     // Server administration scripts.
     'admin' => array(
@@ -103,6 +120,7 @@ $THEME->layouts = array(
         'file' => 'columns2.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
+        'options' => array('langmenu' => true),
     ),
     // Login page.
     'login' => array(
@@ -115,7 +133,7 @@ $THEME->layouts = array(
     'popup' => array(
         'file' => 'popup.php',
         'regions' => array(),
-        'options' => array('nofooter' => true, 'nonavbar' => true),
+        'options' => array('nofooter' => true, 'nonavbar' => true, 'nosearch' => true),
     ),
     // No blocks and minimal footer - used for legacy frame layouts only!
     'frametop' => array(
@@ -134,7 +152,7 @@ $THEME->layouts = array(
     'maintenance' => array(
         'file' => 'maintenance.php',
         'regions' => array(),
-        'options' => array('nofooter' => true, 'nonavbar' => true, 'nocoursefooter' => true, 'nocourseheader' => true),
+        'options' => array('nofooter' => true, 'nonavbar' => true, 'nocoursefooter' => true, 'nocourseheader' => true, 'nosearch' => true),
     ),
     // Should display the content and basic headers only.
     'print' => array(
