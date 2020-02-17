@@ -14,7 +14,7 @@ Web Experience Toolkit (WET), Moodle variant.
 * The source code was getting too hard to maintain.
 
 The good news is that development has started on a new native Moodle WET-BOEW-Moodle GCWeb and GCIntranet themes and good progress has been made as seen on the
-WET-BOEW-Moodle Workimg Examples site which now showcases the new 2019 4.0.30 edition of the theme: [wet-boew-moodle.tngconsulting.ca](http://wet-boew-moodle.tngconsulting.ca/)
+WET-BOEW-Moodle Workimg Examples site which now showcases the new 2020 4.0.30 edition of the theme: [wet-boew-moodle.tngconsulting.ca](http://wet-boew-moodle.tngconsulting.ca/)
 
 **Please contact the primary project maintainer, [Michael Milette, TNG Consulting Inc.](https://www.tngconsulting.ca/contact), if you want to support this project financially or contribute your time and effort to the development of these new themes.**
 
